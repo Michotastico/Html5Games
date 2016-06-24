@@ -41,7 +41,7 @@ var AirPlane = function() {
     var arms = new THREE.Mesh(geomArms, matArms);
     arms.castShadow = true;
     arms.receiveShadow = true;
-    arms.position.set(15,15, 0)
+    arms.position.set(15,15, 0);
     this.mesh.add(arms);
 
     // Create the sword
@@ -53,12 +53,11 @@ var AirPlane = function() {
     geomSword.vertices[2].y+=3;
     geomSword.vertices[3].y+=3;
 
-
     var matSword = new THREE.MeshPhongMaterial({color:Colors.blue, shading:THREE.FlatShading});
     var sword = new THREE.Mesh(geomSword, matSword);
     sword.castShadow = true;
     sword.receiveShadow = true;
-    sword.position.set(55,15, 0)
+    sword.position.set(55,15, 0);
     this.mesh.add(sword);
 
     // Create legs
