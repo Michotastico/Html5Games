@@ -9,7 +9,8 @@ var Colors = {
     brownDark:0x23190f,
     blue:0x3a5d96,
     silver:0xc0c0c0,
-    gold:0xffd700
+    gold:0xffd700,
+    lightBlue:0xbeefed
 };
 
 window.addEventListener('load', init, false);
@@ -36,7 +37,7 @@ function createScene() {
 
     scene = new THREE.Scene();
 
-    scene.fog = new THREE.Fog(0xf7d9aa, 100, 950);
+    scene.fog = new THREE.Fog(0xbeefed, 100, 950);
 
     // Create the camera
     aspectRatio = WIDTH / HEIGHT;
@@ -91,7 +92,7 @@ function createLights() {
     // A hemisphere light is a gradient colored light;
     // the first parameter is the sky color, the second parameter is the ground color,
     // the third parameter is the intensity of the light
-    hemisphereLight = new THREE.HemisphereLight(0xaaaaaa,0x000000, .9)
+    hemisphereLight = new THREE.HemisphereLight(0xaaaaaa,0x000000, .9);
 
     // A directional light shines from a specific direction.
     // It acts like the sun, that means that all the rays produced are parallel.
