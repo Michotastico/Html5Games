@@ -46,6 +46,14 @@ var AirPlane = function() {
 
     // Create the sword
     var geomSword = new THREE.BoxGeometry(70,8,5,1,1,1);
+
+    geomSword.vertices[0].y-=3;
+    geomSword.vertices[1].y-=3;
+
+    geomSword.vertices[2].y+=3;
+    geomSword.vertices[3].y+=3;
+
+
     var matSword = new THREE.MeshPhongMaterial({color:Colors.blue, shading:THREE.FlatShading});
     var sword = new THREE.Mesh(geomSword, matSword);
     sword.castShadow = true;
