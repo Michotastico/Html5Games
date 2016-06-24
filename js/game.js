@@ -123,15 +123,18 @@ function createLights() {
 }
 
 renderer.render(scene, camera);
+var angle = true;
 
 function loop(){
-    // Rotate the propeller, the sea and the sky
-    airplane.propeller.rotation.x += 0.3;
+
     sea.mesh.rotation.z += .0005;
     sky.mesh.rotation.z += .01;
 
     // render the scene
     renderer.render(scene, camera);
+
+    // move legs
+    airplane.legs.rotation.z -= 0.5;
 
     sea.moveWaves();
     // call the loop function again
