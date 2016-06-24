@@ -7,7 +7,7 @@ var Colors = {
     brown:0x59332e,
     pink:0xF5986E,
     brownDark:0x23190f,
-    blue:0x3a5d96,
+    blue:0x68c3c0,
     silver:0xc0c0c0,
     gold:0xffd700,
     lightBlue:0xbeefed
